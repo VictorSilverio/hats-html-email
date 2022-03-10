@@ -31,7 +31,17 @@
          font-size: 15px;
       }
 
+      .border-row {
+         width: 580px !important;
+         overflow: hidden;
+         display: inline-block;
+         white-space: nowrap;
+      }
       @media screen and (max-width: 599.98px) {
+         
+         .main-nav a {
+            padding: 0px 10px !important;
+         }
 
          .column {
             display: block !important;
@@ -43,9 +53,26 @@
          }
          
          .container {
-            width: 100%;
+            display: block;
+            width: 100% !important;
+            /* max-width: 600px; */
+            /* max-width: 100% !important; */
          }
 
+         .hero {
+            height: auto !important;
+            max-width: 100% !important;;
+         }
+         
+         .social-life p {
+            text-align: center !important;
+         }
+
+
+         .bottom-nav a {
+            font-size: 10px !important;
+            padding: 0px 10px !important;
+         }
       
       }
       @media screen and (max-width: 399.98px) {
@@ -59,7 +86,7 @@
          }
          
          .container {
-            width: 100%;
+            max-width: 100% !important;
          }
 
       }
@@ -111,12 +138,12 @@
             <td style="padding:0;">
          <![endif]-->
 
-         <table class="container" align="center" style="border-spacing:0;color:#8c6f4c;font-family: 'Lato',sans-serif, Arial, Helvetica;background-color: #ffffff;Margin:0;padding:0;width: 100%;max-width: 600px;" role="presentation">
-
+         <table le border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0;color:#8c6f4c;font-family: 'Lato',sans-serif, Arial, Helvetica;background-color: #ffffff;Margin:0;padding:0;max-width: 600px;" role="presentation">
+         
 
 <!-- START BANNER ROW -->
             <tr>
-               <td style="padding-bottom: 30px;">
+               <td align="center" style="padding-bottom: 30px;">
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
                         <td class="banner" style="background: #8c6f4c; text-align: center; ">
@@ -168,8 +195,8 @@
                <td>
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
-                        <td>
-                           <img src="https://i.postimg.cc/TwBZHqhY/hero1.png" alt="lady with a straw hat">
+                        <td class="hero">
+                           <img  width="600" src="https://i.postimg.cc/TwBZHqhY/hero1.png" alt="lady with a straw hat" style="max-width:100%;">
                         </td>
                      </tr>
                   </table>
@@ -334,8 +361,8 @@
                <td>
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
-                        <td>
-                           <img src="https://i.postimg.cc/mkbNGjVy/hero22.png" alt="blue hat image">
+                        <td class="hero">
+                           <img src="https://i.postimg.cc/mkbNGjVy/hero22.png" width="600" style="max-width: 100%;" alt="blue hat image">
                         </td>
                      </tr>
 
@@ -417,8 +444,8 @@
                <td>
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
-                        <td>
-                           <img src="https://i.postimg.cc/mg2Bddzy/hero3.png" alt="lady with a straw hat">
+                        <td class="hero">
+                           <img src="https://i.postimg.cc/mg2Bddzy/hero3.png" width="600" style="max-width: 100%;" alt="lady with a straw hat">
                         </td>
                      </tr>
                   </table>
@@ -450,10 +477,10 @@
 
 <!-- STARTOF SOCIAL LIFE ROW 1-->
             <tr>
-               <td style="padding-bottom: 40px;"> 
+               <td class="social-life" style="padding-bottom: 40px;"> 
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
-                        <td class="social-life" style="text-align: center; padding-bottom: 40px;">
+                        <td style="text-align: center; padding-bottom: 40px;">
                            <p style="font-weight: 700;">LIFE IN BRIXTON</p>
                         </td>
                      </tr>
@@ -514,7 +541,7 @@
 
 <!-- STARTOF SOCIAL LIFE ROW 2--> 
             <tr>
-               <td style="padding-bottom: 40px;"> 
+               <td class="social-life" style="padding-bottom: 40px;"> 
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
                         <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
@@ -576,8 +603,8 @@
                <td style="padding-top:50px; padding-bottom: 90px;">
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
-                        <td>
-                           <a href="https://example.com" alt="image of mask sale" target="_blank"><img src="https://i.postimg.cc/kG1pdj63/hero4.png" alt="photo of mask sale"></a>
+                        <td class="hero">
+                           <a href="https://example.com" alt="image of mask sale" target="_blank"><img src="https://i.postimg.cc/kG1pdj63/hero4.png" alt="photo of mask sale" width="600" style="max-width: 100%;"></a>
                         </td>
                      </tr>
                   </table>
@@ -589,15 +616,18 @@
 <!--  START OF BOTTOM NAV ROW -->
             <!-- Border -->
             <tr>
-               <td style="padding-left: 25px; padding-bottom: 40px;">
-                  <table class="border" width="550px" style="border-spacing: 0; background-color:#eaf6fb; border: 1px solid #000000;" role="presentation">
+               <td align="center">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 550px;">
+                     <tr>
+                        <td height="1.5" style="background-color: #000000;"></td>
+                     </tr>
                   </table>
                </td>
             </tr>
 
             <!-- social media -->
             <tr>
-               <td>
+               <td class="social-row" style="padding: 20px 0px;">
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
                         <td style="text-align: center;">
@@ -612,10 +642,14 @@
                </td>
             </tr>
 
+            
             <!-- Border -->
             <tr>
-               <td style="padding-left: 25px; padding-top: 30px; padding-bottom: 30px;">
-                  <table class="border" width="550px" style="border-spacing: 0; background-color:#eaf6fb; border: 1px solid #000000;" role="presentation">
+               <td align="center">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 550px;">
+                     <tr>
+                        <td height="2" style="background-color: #000000;"></td>
+                     </tr>
                   </table>
                </td>
             </tr>
@@ -625,7 +659,7 @@
                <td>
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
-                        <td class="bottom-nav" style="text-align:center;">
+                        <td class="bottom-nav" style="text-align:center; padding: 20px 0px;">
                            <a href="https://example.com" alt="" target="_blank" style="font-size: 12px; color:#000000; padding: 0px 40px 0px 40px;">CUSTOMER SERVICE</a>
                            <a href="https://example.com" alt="" target="_blank" style="font-size: 12px; color:#000000; padding: 0px 40px 0px 40px;">FAQ</a>
                            <a href="https://example.com" alt="" target="_blank" style="font-size: 12px; color:#000000; padding: 0px 40px 0px 40px;"">SIZING</a>
@@ -639,8 +673,11 @@
 
             <!-- Border -->
             <tr>
-               <td style="padding-left: 25px; padding-top: 30px;">
-                  <table class="border" width="550px" style="border-spacing: 0; background-color:#eaf6fb; border: 0.1px solid #000000;" role="presentation">
+               <td align="center">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 550px;">
+                     <tr>
+                        <td height="2" style="background-color: #000000;"></td>
+                     </tr>
                   </table>
                </td>
             </tr>
