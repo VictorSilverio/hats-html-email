@@ -32,45 +32,36 @@
       }
 
       @media screen and (max-width: 599.98px) {
+
+         .column {
+            display: block !important;
+         }
+         
          .two-columns .padding {
             padding-right: 0!important;
             padding-left: 0!important;
          }
-         img.two-col-img {
-            width: 300px!important;
-            max-width: 300px!important;
+         
+         .container {
+            width: 100%;
          }
-         .two-third-columns .padding {
-            padding-right: 0!important;
-            padding-left: 0!important;
-         }
-         .two-third-columns .padding.first {
-            padding-bottom: 0!important;
-         }
-         .two-third-columns .padding.last {
-            padding-top: 0!important;
-         }
-         img.one-third-col-img {
-            width: 200px!important;
-            max-width: 200px!important;
-         }
-         .two-third-columns .content {
-            text-align: center!important;
-         }
-         img.three-col-img-last {
-            width: 200px!important;
-            max-width: 200px!important;
-         }
-         .three-columns .padding {
-            padding-right: 0!important;
-            padding-left: 0!important;
-         }
+
+      
       }
       @media screen and (max-width: 399.98px) {
-         img.three-col-img {
-            width: 200px!important;
-            max-width: 200px!important;
+         .column {
+            display: block !important;
          }
+         
+         .two-columns .padding {
+            padding-right: 0!important;
+            padding-left: 0!important;
+         }
+         
+         .container {
+            width: 100%;
+         }
+
       }
 
       /* Custom Dark Mode Colors */
@@ -120,7 +111,7 @@
             <td style="padding:0;">
          <![endif]-->
 
-         <table align="center" style="border-spacing:0;color:#8c6f4c;font-family: 'Lato',sans-serif, Arial, Helvetica;background-color: #ffffff;Margin:0;padding:0;width: 100%;max-width: 600px;" role="presentation">
+         <table class="container" align="center" style="border-spacing:0;color:#8c6f4c;font-family: 'Lato',sans-serif, Arial, Helvetica;background-color: #ffffff;Margin:0;padding:0;width: 100%;max-width: 600px;" role="presentation">
 
 
 <!-- START BANNER ROW -->
@@ -159,10 +150,10 @@
                   <table width="100%" style="border-spacing:0;" role="presentation">
                      <tr>
                         <td style="text-align: center;">
-                           <a href="https://example.com" alt="men" target="_blank" style="font-size: 11px; padding-right: 70px;">MEN</a>
-                           <a href="https://example.com" alt="women" target="_blank" style="font-size: 11px; padding-right: 70px;">WOMEN</a>
-                           <a href="https://example.com" alt="youth" target="_blank" style="font-size: 11px; padding-right: 70px;">YOUTH</a>
-                           <a href="https://example.com" alt="headwear" target="_blank" style="font-size: 11px;">HEADWEAR</a>
+                           <a href="https://example.com" alt="men" target="_blank" style="color: #8c6f4c; font-size: 11px; padding-right: 70px;">MEN</a>
+                           <a href="https://example.com" alt="women" target="_blank" style="color: #8c6f4c;font-size: 11px; padding-right: 70px;">WOMEN</a>
+                           <a href="https://example.com" alt="youth" target="_blank" style="color: #8c6f4c;font-size: 11px; padding-right: 70px;">YOUTH</a>
+                           <a href="https://example.com" alt="headwear" target="_blank" style="color: #8c6f4c;font-size: 11px;">HEADWEAR</a>
                         </td>
                      </tr>
                   </table>
@@ -231,7 +222,7 @@
                         <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
 
                            <!-- Left product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column"  align="center" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding: 20px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -253,7 +244,7 @@
                            <!-- end of left product -->
 
                            <!-- right product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column"  align="center" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding: 20px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -287,7 +278,7 @@
                         <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
 
                            <!-- Left product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding: 20px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -309,7 +300,7 @@
                            <!-- end of left product -->
 
                            <!-- right product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column"  align="center" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding: 20px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -370,7 +361,7 @@
                         <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
 
                            <!-- Left product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column" align="center" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding: 20px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -392,7 +383,7 @@
                            <!-- end of left product -->
 
                            <!-- right product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding: 20px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -471,7 +462,7 @@
                         <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
 
                            <!-- Left  -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -493,7 +484,7 @@
                            <!-- end of left -->
 
                            <!-- right product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding-left:7px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -529,7 +520,7 @@
                         <td class="two-columns" style="padding: 0; font-size:0; text-align: center;">
 
                            <!-- Left  -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -551,7 +542,7 @@
                            <!-- end of left -->
 
                            <!-- right product -->
-                           <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
+                           <table class="column" align="center"  style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display:inline-block;" role="presentation">
                               <tr>
                                  <td class="padding" style="padding-left:7px;">
                                     <table class="content" style="border-spacing: 0; text-align: left;" role="presentation"> 
@@ -598,7 +589,7 @@
 <!--  START OF BOTTOM NAV ROW -->
             <!-- Border -->
             <tr>
-               <td style="padding-left: 30px; padding-bottom: 40px;">
+               <td style="padding-left: 25px; padding-bottom: 40px;">
                   <table class="border" width="550px" style="border-spacing: 0; background-color:#eaf6fb; border: 1px solid #000000;" role="presentation">
                   </table>
                </td>
@@ -623,7 +614,7 @@
 
             <!-- Border -->
             <tr>
-               <td style="padding-left: 30px; padding-top: 30px; padding-bottom: 30px;">
+               <td style="padding-left: 25px; padding-top: 30px; padding-bottom: 30px;">
                   <table class="border" width="550px" style="border-spacing: 0; background-color:#eaf6fb; border: 1px solid #000000;" role="presentation">
                   </table>
                </td>
@@ -648,7 +639,7 @@
 
             <!-- Border -->
             <tr>
-               <td style="padding-left: 30px; padding-top: 30px;">
+               <td style="padding-left: 25px; padding-top: 30px;">
                   <table class="border" width="550px" style="border-spacing: 0; background-color:#eaf6fb; border: 0.1px solid #000000;" role="presentation">
                   </table>
                </td>
@@ -693,9 +684,9 @@
                      <tr>
                         <td>
                            <p><a href="https://example.com" alt="add to address book" target="_blank" style="font-size: 12px; color:#ffffff; text-decoration: underline;">Add us to your address book</a></p>
-                           <a href="https://example.com" alt="add to address book" target="_blank" style="text-decoration: underline; font-size: 12px; color: #ffffff;">Add us to your address book</a>
+                           <a href="https://example.com" alt="add to address book" target="_blank" style="text-decoration: underline; font-size: 12px; color: #ffffff;">Update your preferences</a>
                            <p style="font-size: 12px; display: inline-block">or</p>
-                           <a href="https://example.com" alt="add to address book" target="_blank" style="text-decoration: underline; font-size: 12px; color: #ffffff;">Add us to your address book</a>
+                           <a href="https://example.com" alt="add to address book" target="_blank" style="text-decoration: underline; font-size: 12px; color: #ffffff;">unsubscribe from the list.</a>
                         </td>
                      </tr>
                      
